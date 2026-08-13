@@ -1,0 +1,13 @@
+# macOS
+.DS_Store
+
+# Xcode user-specific files
+xcuserdata/
+*.xcuserstate
+
+# Xcode build files
+DerivedData/
+build/
+
+# Firebase configuration
+GoogleService-Info.plist
