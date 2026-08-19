@@ -29,14 +29,12 @@ final class LoginUseCases {
     }
     
     func loginWithGoogle(
-        LoginViewController: UIViewController,
-        completion: @escaping (
-            Result<FirebaseAuth.User, Error>
-        ) -> Void
+        loginViewController: UIViewController,
+        completion: @escaping (Result<User, Error>) -> Void
     ) {
 
-        repository.loginwithGoogle(
-            LoginViewController: LoginViewController
+        repository.loginWithGoogle(
+            loginViewController: loginViewController
         ) { result in
 
             DispatchQueue.main.async {

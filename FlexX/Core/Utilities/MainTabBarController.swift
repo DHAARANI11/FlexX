@@ -10,9 +10,15 @@ import UIKit
 final class MainTabBarController: UITabBarController {
 
     private let coordinator: AppCoordinator
+    private let appContainer: AppContainer
 
-    init(coordinator: AppCoordinator) {
+    init(
+        coordinator: AppCoordinator,
+        appContainer: AppContainer
+    ) {
         self.coordinator = coordinator
+        self.appContainer = appContainer
+
         super.init(nibName: nil, bundle: nil)
     }
 
@@ -29,8 +35,12 @@ final class MainTabBarController: UITabBarController {
 
     private func setupTabs() {
 
+        let homeViewModel = HomeViewModel(
+            getProfileUseCase: appContainer.getProfileUseCase
+        )
+
         let homeViewController = HomeViewController(
-            context: PersistenceController.shared.context,
+            viewModel: homeViewModel,
             coordinator: coordinator
         )
 
@@ -39,23 +49,17 @@ final class MainTabBarController: UITabBarController {
             coordinator: coordinator
         )
 
-//        let profileViewController = ProfileViewController(
-//            context: PersistenceController.shared.context,
-//            coordinator: coordinator
-//        )
-        
-        let context = PersistenceController.shared.context
-
-        let userRepository = UserRepositoryImpl(
-            context: context
+        let profileViewModel = ProfileViewModel(
+            getProfileUseCase: appContainer.getProfileUseCase
         )
 
-        let profileViewModel = ProfileViewModel(
-            userRepository: userRepository
+        let editProfileViewModel = EditProfileViewModel(
+            userRepository: appContainer.userRepository
         )
 
         let profileViewController = ProfileViewController(
             viewModel: profileViewModel,
+            editProfileViewModel: editProfileViewModel,
             coordinator: coordinator
         )
 

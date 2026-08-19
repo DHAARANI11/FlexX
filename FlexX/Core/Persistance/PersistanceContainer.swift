@@ -13,20 +13,31 @@ final class PersistenceController {
 
     let container: ModelContainer
 
+    var context: ModelContext { container.mainContext }
+
     private init() {
 
         do {
-            container = try ModelContainer(
-                for: UserModel.self
+
+            let schema = Schema([UserModel.self])
+
+            let configuration = ModelConfiguration(
+                schema: schema
             )
+
+            container = try ModelContainer(
+                for: schema,
+                configurations: configuration
+            )
+
         } catch {
+
+            print("Failed to create ModelContainer")
+            print("Error:", error)
+
             fatalError(
                 "Failed to create ModelContainer: \(error)"
             )
         }
-    }
-
-    var context: ModelContext {
-        container.mainContext
     }
 }

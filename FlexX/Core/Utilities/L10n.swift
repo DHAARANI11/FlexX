@@ -184,4 +184,39 @@ enum L10n {
         comment: "Profile edit profile"
     )
     
+    static let profileHeight = NSLocalizedString(
+        "profile.height",
+        comment: "Profile height"
+    )
+    
+    static let profileWeight = NSLocalizedString(
+        "profile.weight",
+        comment: "Profile weight"
+    )
+    
+    static let profileGender = NSLocalizedString(
+        "profile.gender",
+        comment: "Profile gender"
+    )
+    
+    static let profileNotset = NSLocalizedString(
+        "profile.notset",
+        comment: "Profile not set"
+    )
+    
+    static let personalInformation = NSLocalizedString(
+        "personal.information",
+        comment: "Profile personal information"
+    )
+    
+    static let homeGreeting = NSLocalizedString(
+        "home.greeting",
+        comment: ""
+    )
+    
+    static var language = { NSLocalizedString(
+        "settings.language",
+        comment: ""
+    )}
+    
 }

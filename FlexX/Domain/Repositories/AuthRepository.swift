@@ -21,8 +21,8 @@ protocol AuthRepository {
         password: String
     ) -> Result<User, AuthError>
     
-    func loginwithGoogle(
-        LoginViewController: UIViewController,
-        completion: @escaping (Result<FirebaseAuth.User, Error>) -> Void
+    func loginWithGoogle(
+        loginViewController: UIViewController,
+        completion: @escaping (Result<User, Error>) -> Void
     )
 }

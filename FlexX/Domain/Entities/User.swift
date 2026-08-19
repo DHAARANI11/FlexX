@@ -10,9 +10,15 @@ import Foundation
 struct User {
 
     let id: UUID
-    let name: String
+    var name: String
     let email: String
     let dateOfBirth: Date
+
+    var height: Double?
+    var weight: Double?
+    var gender: String?
+    var profileImageData: Data?
+
     let createdAt: Date
 
     init(
@@ -20,12 +26,20 @@ struct User {
         name: String,
         email: String,
         dateOfBirth: Date,
-        createdAt: Date = Date()
+        height: Double? = nil,
+        weight: Double? = nil,
+        gender: String? = nil,
+        profileImageData: Data? = nil,
+        createdAt: Date = .now
     ) {
         self.id = id
         self.name = name
         self.email = email
         self.dateOfBirth = dateOfBirth
+        self.height = height
+        self.weight = weight
+        self.gender = gender
+        self.profileImageData = profileImageData
         self.createdAt = createdAt
     }
 }

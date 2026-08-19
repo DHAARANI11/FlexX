@@ -9,7 +9,7 @@ import Foundation
 
 protocol UserRepository {
     
-    //func fetchCurrentUser() throws -> User?
+    func fetchCurrentUser() throws -> User?
 
     func updateUser(_ user: User) throws
 }

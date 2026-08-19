@@ -41,12 +41,9 @@ final class KeyBoardManager {
         )
     }
     
-    @objc private func keyboardWillShow(
-        _ notification: Notification
-    ) {
+    @objc private func keyboardWillShow(_ notification: Notification) {
 
-        guard
-            let keyboardFrame = notification.userInfo?[
+        guard let keyboardFrame = notification.userInfo?[
                 UIResponder.keyboardFrameEndUserInfoKey
             ] as? CGRect
         else {
@@ -64,8 +61,7 @@ final class KeyBoardManager {
             return
         }
 
-        scrollView.scrollRectToVisible(
-            firstResponder.convert(
+        scrollView.scrollRectToVisible(firstResponder.convert(
                 firstResponder.bounds,
                 to: scrollView
             ),
@@ -73,17 +69,13 @@ final class KeyBoardManager {
         )
     }
     
-    @objc private func keyboardWillHide(
-        _ notification: Notification
-    ) {
+    @objc private func keyboardWillHide(_ notification: Notification) {
 
         scrollView.contentInset.bottom = 0
         scrollView.verticalScrollIndicatorInsets.bottom = 0
     }
     
-    private func findFirstResponder(
-        in view: UIView
-    ) -> UIView? {
+    private func findFirstResponder( in view: UIView) -> UIView? {
 
         if view.isFirstResponder {
             return view

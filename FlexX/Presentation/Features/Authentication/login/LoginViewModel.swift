@@ -15,6 +15,8 @@ final class LoginViewModel {
     private let loginUseCase: LoginUseCases
     private let authRepository: AuthRepository
 
+    private(set) var loggedInUser: User?
+
     init(loginUseCase: LoginUseCases, authRepository: AuthRepository) {
         self.loginUseCase = loginUseCase
         self.authRepository = authRepository
@@ -56,6 +58,7 @@ final class LoginViewModel {
         case .success(let user):
             print("Login successful")
             print("Welcome \(user.name)")
+            loggedInUser = user
             return nil
 
         case .failure(.userNotFound):
@@ -75,16 +78,13 @@ final class LoginViewModel {
         }
     }
     
-    func loginwithGoogle(
-        
-        LoginViewController: UIViewController,
-        completion: @escaping (
-            Result<FirebaseAuth.User, Error>
-        ) -> Void
+    func loginWithGoogle(
+        loginViewController: UIViewController,
+        completion: @escaping (Result<User, Error>) -> Void
     ) {
 
-        authRepository.loginwithGoogle(
-            LoginViewController: LoginViewController
+        authRepository.loginWithGoogle(
+            loginViewController: loginViewController
         ) { result in
 
             DispatchQueue.main.async {

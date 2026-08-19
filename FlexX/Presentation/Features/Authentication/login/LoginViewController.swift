@@ -15,7 +15,7 @@ final class LoginViewController: UIViewController {
     
     private let coordinator: AppCoordinator
     
-    private var keyboardmanager: KeyBoardManager?
+    //private var keyboardmanager: KeyBoardManager?
     
     init(viewModel: LoginViewModel, coordinator: AppCoordinator) {
 
@@ -361,19 +361,19 @@ final class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        keyboardmanager = KeyBoardManager(
-            scrollView: scrollView,
-            contentView: contentView,
-            view: view
-        )
+//        keyboardmanager = KeyBoardManager(
+//            scrollView: scrollView,
+//            contentView: contentView,
+//            view: view
+//        )
 
         setupUI()
         setupConstraints()
         setupActions()
         setupTextFieldIcons()
         setupPasswordButton()
-        keyboardmanager?.setupKeyboardHandling()
-        keyboardmanager?.setupKeyboardDismissGesture()
+//        keyboardmanager?.setupKeyboardHandling()
+//        keyboardmanager?.setupKeyboardDismissGesture()
     }
     
     private func setupActions() {
@@ -754,9 +754,14 @@ final class LoginViewController: UIViewController {
             return
         }
 
+        guard let user = viewModel.loggedInUser else {
+            showAlert(message: "Something went wrong. Please try again.")
+            return
+        }
+
         print("User logged in successfully")
         
-        SessionManager.shared.login()
+        SessionManager.shared.login(userID: user.id)
 
         coordinator.showHome()
     }
@@ -813,8 +818,8 @@ final class LoginViewController: UIViewController {
     
     @objc private func googleLoginTapped() {
 
-        viewModel.loginwithGoogle(
-            LoginViewController: self
+        viewModel.loginWithGoogle(
+            loginViewController: self
         ) { [weak self] result in
 
             guard let self else {
@@ -826,11 +831,11 @@ final class LoginViewController: UIViewController {
             case .success(let user):
 
                 print("Google Login Successful")
-                print("UID:", user.uid)
-                print("Name:", user.displayName ?? "")
-                print("Email:", user.email ?? "")
+                print("UID:", user.id)
+                print("Name:", user.name )
+                print("Email:", user.email )
 
-                SessionManager.shared.login()
+                SessionManager.shared.login(userID: user.id)
 
                 self.coordinator.showHome()
 
