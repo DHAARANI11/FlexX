@@ -1,0 +1,1748 @@
+{
+  "categories": [
+    {
+      "id": "cat-strength",
+      "name": "Strength Training",
+      "icon": "dumbbell",
+      "description": "Build muscle and strength with targeted resistance workouts."
+    },
+    {
+      "id": "cat-cardio",
+      "name": "Cardio",
+      "icon": "heart-pulse",
+      "description": "Improve endurance and burn calories with cardio training."
+    }
+  ],
+  "muscleGroups": [
+    {
+      "id": "mg-upper-body",
+      "categoryId": "cat-strength",
+      "name": "Upper Body",
+      "icon": "arm-flex"
+    },
+    {
+      "id": "mg-lower-body",
+      "categoryId": "cat-strength",
+      "name": "Lower Body",
+      "icon": "leg"
+    },
+    {
+      "id": "mg-core",
+      "categoryId": "cat-strength",
+      "name": "Core",
+      "icon": "core"
+    }
+  ],
+  "muscles": [
+    {
+      "id": "chest",
+      "muscleGroupId": "mg-upper-body",
+      "name": "Chest",
+      "imageUrl": "assets/muscles/chest.png"
+    },
+    {
+      "id": "back",
+      "muscleGroupId": "mg-upper-body",
+      "name": "Back",
+      "imageUrl": "assets/muscles/back.png"
+    },
+    {
+      "id": "shoulders",
+      "muscleGroupId": "mg-upper-body",
+      "name": "Shoulders",
+      "imageUrl": "assets/muscles/shoulders.png"
+    },
+    {
+      "id": "biceps",
+      "muscleGroupId": "mg-upper-body",
+      "name": "Biceps",
+      "imageUrl": "assets/muscles/biceps.png"
+    },
+    {
+      "id": "triceps",
+      "muscleGroupId": "mg-upper-body",
+      "name": "Triceps",
+      "imageUrl": "assets/muscles/triceps.png"
+    },
+    {
+      "id": "forearms",
+      "muscleGroupId": "mg-upper-body",
+      "name": "Forearms",
+      "imageUrl": "assets/muscles/forearms.png"
+    },
+    {
+      "id": "quads",
+      "muscleGroupId": "mg-lower-body",
+      "name": "Quadriceps",
+      "imageUrl": "assets/muscles/quads.png"
+    },
+    {
+      "id": "hamstrings",
+      "muscleGroupId": "mg-lower-body",
+      "name": "Hamstrings",
+      "imageUrl": "assets/muscles/hamstrings.png"
+    },
+    {
+      "id": "glutes",
+      "muscleGroupId": "mg-lower-body",
+      "name": "Glutes",
+      "imageUrl": "assets/muscles/glutes.png"
+    },
+    {
+      "id": "calves",
+      "muscleGroupId": "mg-lower-body",
+      "name": "Calves",
+      "imageUrl": "assets/muscles/calves.png"
+    },
+    {
+      "id": "abs",
+      "muscleGroupId": "mg-core",
+      "name": "Abs",
+      "imageUrl": "assets/muscles/abs.png"
+    },
+    {
+      "id": "obliques",
+      "muscleGroupId": "mg-core",
+      "name": "Obliques",
+      "imageUrl": "assets/muscles/obliques.png"
+    }
+  ],
+  "cardioTypes": [
+    {
+      "id": "running",
+      "name": "Running",
+      "icon": "running",
+      "imageUrl": "assets/cardio/running.png"
+    },
+    {
+      "id": "cycling",
+      "name": "Cycling",
+      "icon": "cycling",
+      "imageUrl": "assets/cardio/cycling.png"
+    },
+    {
+      "id": "jump-rope",
+      "name": "Jump Rope",
+      "icon": "jump-rope",
+      "imageUrl": "assets/cardio/jump-rope.png"
+    },
+    {
+      "id": "hiit",
+      "name": "HIIT",
+      "icon": "hiit",
+      "imageUrl": "assets/cardio/hiit.png"
+    },
+    {
+      "id": "swimming",
+      "name": "Swimming",
+      "icon": "swimming",
+      "imageUrl": "assets/cardio/swimming.png"
+    },
+    {
+      "id": "rowing",
+      "name": "Rowing",
+      "icon": "rowing",
+      "imageUrl": "assets/cardio/rowing.png"
+    }
+  ],
+  "workouts": [
+    {
+      "id": "chest-push-up",
+      "muscleId": "chest",
+      "name": "Push-Up",
+      "gifUrl": "assets/gifs/chest-push-up.gif",
+      "imageUrl": "assets/images/chest-push-up.jpg",
+      "videoUrl": "assets/videos/chest-push-up.mp4",
+      "equipment": "Bodyweight",
+      "difficulty": "Beginner",
+      "sets": 3,
+      "reps": "12-15",
+      "restSeconds": 45,
+      "instructions": [
+        "Start in a plank position with hands slightly wider than shoulders.",
+        "Lower your body until your chest nearly touches the floor, keeping elbows at 45\u00b0.",
+        "Push back up to the starting position, keeping your core tight throughout."
+      ],
+      "tips": "Keep your body in a straight line from head to heels."
+    },
+    {
+      "id": "chest-bench-press",
+      "muscleId": "chest",
+      "name": "Barbell Bench Press",
+      "gifUrl": "assets/gifs/chest-bench-press.gif",
+      "imageUrl": "assets/images/chest-bench-press.jpg",
+      "videoUrl": "assets/videos/chest-bench-press.mp4",
+      "equipment": "Barbell, Bench",
+      "difficulty": "Intermediate",
+      "sets": 4,
+      "reps": "8-10",
+      "restSeconds": 90,
+      "instructions": [
+        "Lie on the bench with feet flat on the floor, grip the bar slightly wider than shoulder-width.",
+        "Lower the bar slowly to mid-chest.",
+        "Press the bar back up until arms are fully extended."
+      ],
+      "tips": "Keep shoulder blades pulled back and down."
+    },
+    {
+      "id": "chest-incline-db-press",
+      "muscleId": "chest",
+      "name": "Incline Dumbbell Press",
+      "gifUrl": "assets/gifs/chest-incline-db-press.gif",
+      "imageUrl": "assets/images/chest-incline-db-press.jpg",
+      "videoUrl": "assets/videos/chest-incline-db-press.mp4",
+      "equipment": "Dumbbells, Incline Bench",
+      "difficulty": "Intermediate",
+      "sets": 3,
+      "reps": "10-12",
+      "restSeconds": 75,
+      "instructions": [
+        "Set the bench to a 30-45\u00b0 incline and hold a dumbbell in each hand at chest level.",
+        "Press the dumbbells up until arms are extended.",
+        "Lower back down with control to the starting position."
+      ],
+      "tips": "Targets the upper chest more than a flat press."
+    },
+    {
+      "id": "chest-fly",
+      "muscleId": "chest",
+      "name": "Dumbbell Chest Fly",
+      "gifUrl": "assets/gifs/chest-fly.gif",
+      "imageUrl": "assets/images/chest-fly.jpg",
+      "videoUrl": "assets/videos/chest-fly.mp4",
+      "equipment": "Dumbbells, Bench",
+      "difficulty": "Intermediate",
+      "sets": 3,
+      "reps": "12-15",
+      "restSeconds": 60,
+      "instructions": [
+        "Lie on a flat bench holding dumbbells above your chest with a slight bend in the elbows.",
+        "Lower the dumbbells out to the sides in an arc until you feel a stretch in your chest.",
+        "Bring the dumbbells back up to the starting position, squeezing your chest."
+      ],
+      "tips": "Don't let the elbows lock or drop too low to protect the shoulders."
+    },
+    {
+      "id": "chest-dips",
+      "muscleId": "chest",
+      "name": "Chest Dips",
+      "gifUrl": "assets/gifs/chest-dips.gif",
+      "imageUrl": "assets/images/chest-dips.jpg",
+      "videoUrl": "assets/videos/chest-dips.mp4",
+      "equipment": "Dip Bars",
+      "difficulty": "Advanced",
+      "sets": 3,
+      "reps": "8-12",
+      "restSeconds": 90,
+      "instructions": [
+        "Support yourself on parallel bars with arms extended, leaning torso slightly forward.",
+        "Lower your body until your upper arms are parallel to the floor.",
+        "Push back up to the starting position."
+      ],
+      "tips": "Leaning forward shifts more emphasis onto the chest."
+    },
+    {
+      "id": "back-pull-up",
+      "muscleId": "back",
+      "name": "Pull-Up",
+      "gifUrl": "assets/gifs/back-pull-up.gif",
+      "imageUrl": "assets/images/back-pull-up.jpg",
+      "videoUrl": "assets/videos/back-pull-up.mp4",
+      "equipment": "Pull-Up Bar",
+      "difficulty": "Advanced",
+      "sets": 3,
+      "reps": "6-10",
+      "restSeconds": 90,
+      "instructions": [
+        "Hang from a bar with an overhand grip, hands slightly wider than shoulders.",
+        "Pull your body up until your chin clears the bar.",
+        "Lower yourself back down with control."
+      ],
+      "tips": "Avoid swinging; keep the movement controlled."
+    },
+    {
+      "id": "back-lat-pulldown",
+      "muscleId": "back",
+      "name": "Lat Pulldown",
+      "gifUrl": "assets/gifs/back-lat-pulldown.gif",
+      "imageUrl": "assets/images/back-lat-pulldown.jpg",
+      "videoUrl": "assets/videos/back-lat-pulldown.mp4",
+      "equipment": "Cable Machine",
+      "difficulty": "Beginner",
+      "sets": 3,
+      "reps": "10-12",
+      "restSeconds": 60,
+      "instructions": [
+        "Sit at the machine and grip the bar wider than shoulder-width.",
+        "Pull the bar down to your upper chest while keeping your torso upright.",
+        "Slowly return the bar to the starting position."
+      ],
+      "tips": "Focus on pulling with your back, not your arms."
+    },
+    {
+      "id": "back-bent-over-row",
+      "muscleId": "back",
+      "name": "Bent Over Barbell Row",
+      "gifUrl": "assets/gifs/back-bent-over-row.gif",
+      "imageUrl": "assets/images/back-bent-over-row.jpg",
+      "videoUrl": "assets/videos/back-bent-over-row.mp4",
+      "equipment": "Barbell",
+      "difficulty": "Intermediate",
+      "sets": 4,
+      "reps": "8-10",
+      "restSeconds": 75,
+      "instructions": [
+        "Hinge at the hips holding a barbell, back flat and knees slightly bent.",
+        "Pull the bar toward your lower ribcage, squeezing your shoulder blades together.",
+        "Lower the bar back down with control."
+      ],
+      "tips": "Keep your core braced to protect your lower back."
+    },
+    {
+      "id": "back-deadlift",
+      "muscleId": "back",
+      "name": "Deadlift",
+      "gifUrl": "assets/gifs/back-deadlift.gif",
+      "imageUrl": "assets/images/back-deadlift.jpg",
+      "videoUrl": "assets/videos/back-deadlift.mp4",
+      "equipment": "Barbell",
+      "difficulty": "Advanced",
+      "sets": 4,
+      "reps": "5-8",
+      "restSeconds": 120,
+      "instructions": [
+        "Stand with feet hip-width apart, barbell over mid-foot, and grip just outside your legs.",
+        "Keep your back flat as you lift the bar by extending your hips and knees together.",
+        "Lower the bar back to the floor with control, hinging at the hips first."
+      ],
+      "tips": "Keep the bar close to your body throughout the lift."
+    },
+    {
+      "id": "back-seated-cable-row",
+      "muscleId": "back",
+      "name": "Seated Cable Row",
+      "gifUrl": "assets/gifs/back-seated-cable-row.gif",
+      "imageUrl": "assets/images/back-seated-cable-row.jpg",
+      "videoUrl": "assets/videos/back-seated-cable-row.mp4",
+      "equipment": "Cable Machine",
+      "difficulty": "Beginner",
+      "sets": 3,
+      "reps": "10-12",
+      "restSeconds": 60,
+      "instructions": [
+        "Sit at the cable row machine with knees slightly bent, grip the handle.",
+        "Pull the handle toward your torso, squeezing your shoulder blades together.",
+        "Extend your arms back out with control."
+      ],
+      "tips": "Keep your torso upright, avoid using momentum."
+    },
+    {
+      "id": "shoulders-ohp",
+      "muscleId": "shoulders",
+      "name": "Overhead Press",
+      "gifUrl": "assets/gifs/shoulders-ohp.gif",
+      "imageUrl": "assets/images/shoulders-ohp.jpg",
+      "videoUrl": "assets/videos/shoulders-ohp.mp4",
+      "equipment": "Barbell or Dumbbells",
+      "difficulty": "Intermediate",
+      "sets": 4,
+      "reps": "8-10",
+      "restSeconds": 90,
+      "instructions": [
+        "Stand with feet shoulder-width apart, holding the weight at shoulder height.",
+        "Press the weight overhead until arms are fully extended.",
+        "Lower back down to shoulder height with control."
+      ],
+      "tips": "Keep your core tight to avoid arching your lower back."
+    },
+    {
+      "id": "shoulders-lateral-raise",
+      "muscleId": "shoulders",
+      "name": "Lateral Raise",
+      "gifUrl": "assets/gifs/shoulders-lateral-raise.gif",
+      "imageUrl": "assets/images/shoulders-lateral-raise.jpg",
+      "videoUrl": "assets/videos/shoulders-lateral-raise.mp4",
+      "equipment": "Dumbbells",
+      "difficulty": "Beginner",
+      "sets": 3,
+      "reps": "12-15",
+      "restSeconds": 45,
+      "instructions": [
+        "Stand holding a dumbbell in each hand at your sides.",
+        "Raise both arms out to the sides until they reach shoulder height.",
+        "Lower back down with control."
+      ],
+      "tips": "Use a slight bend in the elbows and avoid swinging."
+    },
+    {
+      "id": "shoulders-front-raise",
+      "muscleId": "shoulders",
+      "name": "Front Raise",
+      "gifUrl": "assets/gifs/shoulders-front-raise.gif",
+      "imageUrl": "assets/images/shoulders-front-raise.jpg",
+      "videoUrl": "assets/videos/shoulders-front-raise.mp4",
+      "equipment": "Dumbbells",
+      "difficulty": "Beginner",
+      "sets": 3,
+      "reps": "12-15",
+      "restSeconds": 45,
+      "instructions": [
+        "Stand holding dumbbells in front of your thighs.",
+        "Raise one or both arms straight in front of you to shoulder height.",
+        "Lower back down with control."
+      ],
+      "tips": "Avoid using momentum from your lower back."
+    },
+    {
+      "id": "shoulders-arnold-press",
+      "muscleId": "shoulders",
+      "name": "Arnold Press",
+      "gifUrl": "assets/gifs/shoulders-arnold-press.gif",
+      "imageUrl": "assets/images/shoulders-arnold-press.jpg",
+      "videoUrl": "assets/videos/shoulders-arnold-press.mp4",
+      "equipment": "Dumbbells",
+      "difficulty": "Intermediate",
+      "sets": 3,
+      "reps": "10-12",
+      "restSeconds": 75,
+      "instructions": [
+        "Hold dumbbells at shoulder height with palms facing you.",
+        "Press the dumbbells overhead while rotating your palms to face forward.",
+        "Reverse the motion to return to the starting position."
+      ],
+      "tips": "Move slowly to maintain control through the rotation."
+    },
+    {
+      "id": "shoulders-rear-delt-fly",
+      "muscleId": "shoulders",
+      "name": "Rear Delt Fly",
+      "gifUrl": "assets/gifs/shoulders-rear-delt-fly.gif",
+      "imageUrl": "assets/images/shoulders-rear-delt-fly.jpg",
+      "videoUrl": "assets/videos/shoulders-rear-delt-fly.mp4",
+      "equipment": "Dumbbells",
+      "difficulty": "Beginner",
+      "sets": 3,
+      "reps": "12-15",
+      "restSeconds": 45,
+      "instructions": [
+        "Hinge forward at the hips holding dumbbells with a slight bend in the elbows.",
+        "Raise the dumbbells out to the sides, squeezing your shoulder blades together.",
+        "Lower back down with control."
+      ],
+      "tips": "Keep the movement slow to isolate the rear delts."
+    },
+    {
+      "id": "biceps-barbell-curl",
+      "muscleId": "biceps",
+      "name": "Barbell Curl",
+      "gifUrl": "assets/gifs/biceps-barbell-curl.gif",
+      "imageUrl": "assets/images/biceps-barbell-curl.jpg",
+      "videoUrl": "assets/videos/biceps-barbell-curl.mp4",
+      "equipment": "Barbell",
+      "difficulty": "Beginner",
+      "sets": 3,
+      "reps": "10-12",
+      "restSeconds": 60,
+      "instructions": [
+        "Stand holding a barbell with an underhand grip, arms extended.",
+        "Curl the bar up toward your shoulders, keeping elbows close to your torso.",
+        "Lower the bar back down with control."
+      ],
+      "tips": "Avoid swinging your body to lift the weight."
+    },
+    {
+      "id": "biceps-dumbbell-curl",
+      "muscleId": "biceps",
+      "name": "Dumbbell Curl",
+      "gifUrl": "assets/gifs/biceps-dumbbell-curl.gif",
+      "imageUrl": "assets/images/biceps-dumbbell-curl.jpg",
+      "videoUrl": "assets/videos/biceps-dumbbell-curl.mp4",
+      "equipment": "Dumbbells",
+      "difficulty": "Beginner",
+      "sets": 3,
+      "reps": "10-12",
+      "restSeconds": 60,
+      "instructions": [
+        "Stand holding a dumbbell in each hand, palms facing forward.",
+        "Curl the dumbbells up toward your shoulders.",
+        "Lower back down with control, alternating or together."
+      ],
+      "tips": "Keep your elbows fixed at your sides throughout."
+    },
+    {
+      "id": "biceps-hammer-curl",
+      "muscleId": "biceps",
+      "name": "Hammer Curl",
+      "gifUrl": "assets/gifs/biceps-hammer-curl.gif",
+      "imageUrl": "assets/images/biceps-hammer-curl.jpg",
+      "videoUrl": "assets/videos/biceps-hammer-curl.mp4",
+      "equipment": "Dumbbells",
+      "difficulty": "Beginner",
+      "sets": 3,
+      "reps": "10-12",
+      "restSeconds": 60,
+      "instructions": [
+        "Stand holding dumbbells with palms facing your torso (neutral grip).",
+        "Curl the dumbbells up toward your shoulders keeping the neutral grip.",
+        "Lower back down with control."
+      ],
+      "tips": "Also engages the forearms and brachialis."
+    },
+    {
+      "id": "biceps-concentration-curl",
+      "muscleId": "biceps",
+      "name": "Concentration Curl",
+      "gifUrl": "assets/gifs/biceps-concentration-curl.gif",
+      "imageUrl": "assets/images/biceps-concentration-curl.jpg",
+      "videoUrl": "assets/videos/biceps-concentration-curl.mp4",
+      "equipment": "Dumbbell",
+      "difficulty": "Intermediate",
+      "sets": 3,
+      "reps": "10-12",
+      "restSeconds": 45,
+      "instructions": [
+        "Sit on a bench, elbow braced against your inner thigh, holding a dumbbell.",
+        "Curl the dumbbell up toward your shoulder.",
+        "Lower back down slowly with full control."
+      ],
+      "tips": "Focus on squeezing the bicep at the top."
+    },
+    {
+      "id": "biceps-preacher-curl",
+      "muscleId": "biceps",
+      "name": "Preacher Curl",
+      "gifUrl": "assets/gifs/biceps-preacher-curl.gif",
+      "imageUrl": "assets/images/biceps-preacher-curl.jpg",
+      "videoUrl": "assets/videos/biceps-preacher-curl.mp4",
+      "equipment": "EZ Bar, Preacher Bench",
+      "difficulty": "Intermediate",
+      "sets": 3,
+      "reps": "10-12",
+      "restSeconds": 60,
+      "instructions": [
+        "Sit at the preacher bench with your upper arms resting on the pad, holding an EZ bar.",
+        "Curl the bar up toward your shoulders.",
+        "Lower back down slowly without fully locking out the elbows."
+      ],
+      "tips": "The preacher bench prevents cheating with momentum."
+    },
+    {
+      "id": "triceps-dip",
+      "muscleId": "triceps",
+      "name": "Tricep Dip",
+      "gifUrl": "assets/gifs/triceps-dip.gif",
+      "imageUrl": "assets/images/triceps-dip.jpg",
+      "videoUrl": "assets/videos/triceps-dip.mp4",
+      "equipment": "Bench or Dip Bars",
+      "difficulty": "Intermediate",
+      "sets": 3,
+      "reps": "10-12",
+      "restSeconds": 60,
+      "instructions": [
+        "Support your body on a bench or bars with arms extended, torso upright.",
+        "Lower your body by bending your elbows to about 90\u00b0.",
+        "Push back up to the starting position."
+      ],
+      "tips": "Keep elbows pointing backward, not flaring out."
+    },
+    {
+      "id": "triceps-close-grip-bench",
+      "muscleId": "triceps",
+      "name": "Close-Grip Bench Press",
+      "gifUrl": "assets/gifs/triceps-close-grip-bench.gif",
+      "imageUrl": "assets/images/triceps-close-grip-bench.jpg",
+      "videoUrl": "assets/videos/triceps-close-grip-bench.mp4",
+      "equipment": "Barbell, Bench",
+      "difficulty": "Intermediate",
+      "sets": 4,
+      "reps": "8-10",
+      "restSeconds": 90,
+      "instructions": [
+        "Lie on a bench and grip the bar with hands shoulder-width apart.",
+        "Lower the bar to your lower chest, keeping elbows close to your body.",
+        "Press the bar back up to full extension."
+      ],
+      "tips": "A narrower grip shifts emphasis to the triceps."
+    },
+    {
+      "id": "triceps-overhead-extension",
+      "muscleId": "triceps",
+      "name": "Overhead Tricep Extension",
+      "gifUrl": "assets/gifs/triceps-overhead-extension.gif",
+      "imageUrl": "assets/images/triceps-overhead-extension.jpg",
+      "videoUrl": "assets/videos/triceps-overhead-extension.mp4",
+      "equipment": "Dumbbell",
+      "difficulty": "Beginner",
+      "sets": 3,
+      "reps": "10-12",
+      "restSeconds": 60,
+      "instructions": [
+        "Stand or sit holding a dumbbell overhead with both hands.",
+        "Lower the dumbbell behind your head by bending your elbows.",
+        "Extend your arms back up to the starting position."
+      ],
+      "tips": "Keep your elbows pointed forward and stationary."
+    },
+    {
+      "id": "triceps-pushdown",
+      "muscleId": "triceps",
+      "name": "Tricep Pushdown",
+      "gifUrl": "assets/gifs/triceps-pushdown.gif",
+      "imageUrl": "assets/images/triceps-pushdown.jpg",
+      "videoUrl": "assets/videos/triceps-pushdown.mp4",
+      "equipment": "Cable Machine",
+      "difficulty": "Beginner",
+      "sets": 3,
+      "reps": "12-15",
+      "restSeconds": 45,
+      "instructions": [
+        "Stand at a cable machine holding a bar or rope attachment at chest height.",
+        "Push the attachment down until your arms are fully extended.",
+        "Slowly return to the starting position."
+      ],
+      "tips": "Keep your elbows pinned to your sides."
+    },
+    {
+      "id": "triceps-skull-crusher",
+      "muscleId": "triceps",
+      "name": "Skull Crusher",
+      "gifUrl": "assets/gifs/triceps-skull-crusher.gif",
+      "imageUrl": "assets/images/triceps-skull-crusher.jpg",
+      "videoUrl": "assets/videos/triceps-skull-crusher.mp4",
+      "equipment": "EZ Bar, Bench",
+      "difficulty": "Intermediate",
+      "sets": 3,
+      "reps": "10-12",
+      "restSeconds": 60,
+      "instructions": [
+        "Lie on a bench holding an EZ bar with arms extended above your chest.",
+        "Lower the bar toward your forehead by bending your elbows.",
+        "Extend your arms back up to the starting position."
+      ],
+      "tips": "Keep upper arms stationary throughout the movement."
+    },
+    {
+      "id": "forearms-wrist-curl",
+      "muscleId": "forearms",
+      "name": "Wrist Curl",
+      "gifUrl": "assets/gifs/forearms-wrist-curl.gif",
+      "imageUrl": "assets/images/forearms-wrist-curl.jpg",
+      "videoUrl": "assets/videos/forearms-wrist-curl.mp4",
+      "equipment": "Dumbbell or Barbell",
+      "difficulty": "Beginner",
+      "sets": 3,
+      "reps": "15-20",
+      "restSeconds": 30,
+      "instructions": [
+        "Sit with forearms resting on your thighs, palms facing up, holding the weight.",
+        "Lower the weight by extending your wrists.",
+        "Curl the weight back up by flexing your wrists."
+      ],
+      "tips": "Use a light weight and focus on wrist movement only."
+    },
+    {
+      "id": "forearms-reverse-wrist-curl",
+      "muscleId": "forearms",
+      "name": "Reverse Wrist Curl",
+      "gifUrl": "assets/gifs/forearms-reverse-wrist-curl.gif",
+      "imageUrl": "assets/images/forearms-reverse-wrist-curl.jpg",
+      "videoUrl": "assets/videos/forearms-reverse-wrist-curl.mp4",
+      "equipment": "Dumbbell or Barbell",
+      "difficulty": "Beginner",
+      "sets": 3,
+      "reps": "15-20",
+      "restSeconds": 30,
+      "instructions": [
+        "Sit with forearms resting on your thighs, palms facing down, holding the weight.",
+        "Lower the weight by flexing your wrists downward.",
+        "Raise the weight back up by extending your wrists."
+      ],
+      "tips": "Keep movements slow and controlled."
+    },
+    {
+      "id": "forearms-farmers-carry",
+      "muscleId": "forearms",
+      "name": "Farmer's Carry",
+      "gifUrl": "assets/gifs/forearms-farmers-carry.gif",
+      "imageUrl": "assets/images/forearms-farmers-carry.jpg",
+      "videoUrl": "assets/videos/forearms-farmers-carry.mp4",
+      "equipment": "Dumbbells or Kettlebells",
+      "difficulty": "Beginner",
+      "sets": 3,
+      "reps": "30-40m",
+      "restSeconds": 60,
+      "instructions": [
+        "Hold a heavy dumbbell or kettlebell in each hand at your sides.",
+        "Walk forward for the set distance while keeping your core tight and shoulders back.",
+        "Set the weights down with control at the end."
+      ],
+      "tips": "Grip the weight firmly without letting your shoulders shrug."
+    },
+    {
+      "id": "forearms-plate-pinch",
+      "muscleId": "forearms",
+      "name": "Plate Pinch Hold",
+      "gifUrl": "assets/gifs/forearms-plate-pinch.gif",
+      "imageUrl": "assets/images/forearms-plate-pinch.jpg",
+      "videoUrl": "assets/videos/forearms-plate-pinch.mp4",
+      "equipment": "Weight Plates",
+      "difficulty": "Intermediate",
+      "sets": 3,
+      "reps": "20-30s",
+      "restSeconds": 45,
+      "instructions": [
+        "Pinch two weight plates together (smooth sides out) with your fingers and thumb.",
+        "Hold the plates at your side for the target time.",
+        "Set the plates down with control."
+      ],
+      "tips": "Great for building crushing and pinch grip strength."
+    },
+    {
+      "id": "forearms-reverse-curl",
+      "muscleId": "forearms",
+      "name": "Reverse Curl",
+      "gifUrl": "assets/gifs/forearms-reverse-curl.gif",
+      "imageUrl": "assets/images/forearms-reverse-curl.jpg",
+      "videoUrl": "assets/videos/forearms-reverse-curl.mp4",
+      "equipment": "Barbell or EZ Bar",
+      "difficulty": "Beginner",
+      "sets": 3,
+      "reps": "10-12",
+      "restSeconds": 60,
+      "instructions": [
+        "Stand holding a bar with an overhand (palms down) grip.",
+        "Curl the bar up toward your shoulders keeping the overhand grip.",
+        "Lower back down with control."
+      ],
+      "tips": "Builds forearm and brachioradialis strength."
+    },
+    {
+      "id": "quads-squat",
+      "muscleId": "quads",
+      "name": "Barbell Squat",
+      "gifUrl": "assets/gifs/quads-squat.gif",
+      "imageUrl": "assets/images/quads-squat.jpg",
+      "videoUrl": "assets/videos/quads-squat.mp4",
+      "equipment": "Barbell, Squat Rack",
+      "difficulty": "Intermediate",
+      "sets": 4,
+      "reps": "8-10",
+      "restSeconds": 90,
+      "instructions": [
+        "Position the bar on your upper back, feet shoulder-width apart.",
+        "Bend your knees and hips to lower down until thighs are parallel to the floor.",
+        "Drive through your heels to return to standing."
+      ],
+      "tips": "Keep your chest up and knees tracking over your toes."
+    },
+    {
+      "id": "quads-lunges",
+      "muscleId": "quads",
+      "name": "Walking Lunges",
+      "gifUrl": "assets/gifs/quads-lunges.gif",
+      "imageUrl": "assets/images/quads-lunges.jpg",
+      "videoUrl": "assets/videos/quads-lunges.mp4",
+      "equipment": "Dumbbells (optional)",
+      "difficulty": "Beginner",
+      "sets": 3,
+      "reps": "10-12 per leg",
+      "restSeconds": 60,
+      "instructions": [
+        "Stand tall and step forward with one leg, lowering your hips until both knees are bent 90\u00b0.",
+        "Push off the front foot to step into the next lunge.",
+        "Continue alternating legs for the set."
+      ],
+      "tips": "Keep your front knee aligned with your ankle."
+    },
+    {
+      "id": "quads-leg-press",
+      "muscleId": "quads",
+      "name": "Leg Press",
+      "gifUrl": "assets/gifs/quads-leg-press.gif",
+      "imageUrl": "assets/images/quads-leg-press.jpg",
+      "videoUrl": "assets/videos/quads-leg-press.mp4",
+      "equipment": "Leg Press Machine",
+      "difficulty": "Beginner",
+      "sets": 3,
+      "reps": "10-12",
+      "restSeconds": 75,
+      "instructions": [
+        "Sit in the leg press machine with feet shoulder-width apart on the platform.",
+        "Lower the platform by bending your knees toward your chest.",
+        "Press back up to the starting position without locking your knees."
+      ],
+      "tips": "Keep your lower back pressed against the pad."
+    },
+    {
+      "id": "quads-leg-extension",
+      "muscleId": "quads",
+      "name": "Leg Extension",
+      "gifUrl": "assets/gifs/quads-leg-extension.gif",
+      "imageUrl": "assets/images/quads-leg-extension.jpg",
+      "videoUrl": "assets/videos/quads-leg-extension.mp4",
+      "equipment": "Leg Extension Machine",
+      "difficulty": "Beginner",
+      "sets": 3,
+      "reps": "12-15",
+      "restSeconds": 45,
+      "instructions": [
+        "Sit in the machine with the pad resting on your lower shins.",
+        "Extend your legs until they are straight.",
+        "Lower back down with control."
+      ],
+      "tips": "Avoid locking your knees forcefully at the top."
+    },
+    {
+      "id": "quads-bulgarian-split-squat",
+      "muscleId": "quads",
+      "name": "Bulgarian Split Squat",
+      "gifUrl": "assets/gifs/quads-bulgarian-split-squat.gif",
+      "imageUrl": "assets/images/quads-bulgarian-split-squat.jpg",
+      "videoUrl": "assets/videos/quads-bulgarian-split-squat.mp4",
+      "equipment": "Dumbbells, Bench",
+      "difficulty": "Intermediate",
+      "sets": 3,
+      "reps": "8-10 per leg",
+      "restSeconds": 75,
+      "instructions": [
+        "Stand a couple feet in front of a bench and rest one foot on it behind you.",
+        "Lower your body by bending your front knee until your thigh is parallel to the floor.",
+        "Push through your front heel to return to standing."
+      ],
+      "tips": "Keep your torso upright throughout the movement."
+    },
+    {
+      "id": "hamstrings-rdl",
+      "muscleId": "hamstrings",
+      "name": "Romanian Deadlift",
+      "gifUrl": "assets/gifs/hamstrings-rdl.gif",
+      "imageUrl": "assets/images/hamstrings-rdl.jpg",
+      "videoUrl": "assets/videos/hamstrings-rdl.mp4",
+      "equipment": "Barbell or Dumbbells",
+      "difficulty": "Intermediate",
+      "sets": 4,
+      "reps": "8-10",
+      "restSeconds": 90,
+      "instructions": [
+        "Stand holding the weight in front of your thighs, feet hip-width apart.",
+        "Hinge at the hips, lowering the weight along your legs while keeping a flat back.",
+        "Drive your hips forward to return to standing."
+      ],
+      "tips": "Keep a slight bend in the knees throughout."
+    },
+    {
+      "id": "hamstrings-leg-curl",
+      "muscleId": "hamstrings",
+      "name": "Lying Leg Curl",
+      "gifUrl": "assets/gifs/hamstrings-leg-curl.gif",
+      "imageUrl": "assets/images/hamstrings-leg-curl.jpg",
+      "videoUrl": "assets/videos/hamstrings-leg-curl.mp4",
+      "equipment": "Leg Curl Machine",
+      "difficulty": "Beginner",
+      "sets": 3,
+      "reps": "12-15",
+      "restSeconds": 45,
+      "instructions": [
+        "Lie face down on the machine with the pad resting just above your heels.",
+        "Curl your legs up by bending your knees as far as possible.",
+        "Lower back down with control."
+      ],
+      "tips": "Avoid lifting your hips off the pad."
+    },
+    {
+      "id": "hamstrings-good-morning",
+      "muscleId": "hamstrings",
+      "name": "Good Morning",
+      "gifUrl": "assets/gifs/hamstrings-good-morning.gif",
+      "imageUrl": "assets/images/hamstrings-good-morning.jpg",
+      "videoUrl": "assets/videos/hamstrings-good-morning.mp4",
+      "equipment": "Barbell",
+      "difficulty": "Advanced",
+      "sets": 3,
+      "reps": "8-10",
+      "restSeconds": 90,
+      "instructions": [
+        "Position a barbell on your upper back, feet shoulder-width apart.",
+        "Hinge at the hips, lowering your torso forward while keeping your back flat.",
+        "Return to standing by driving your hips forward."
+      ],
+      "tips": "Use light weight until your form is solid."
+    },
+    {
+      "id": "hamstrings-glute-ham-raise",
+      "muscleId": "hamstrings",
+      "name": "Glute Ham Raise",
+      "gifUrl": "assets/gifs/hamstrings-glute-ham-raise.gif",
+      "imageUrl": "assets/images/hamstrings-glute-ham-raise.jpg",
+      "videoUrl": "assets/videos/hamstrings-glute-ham-raise.mp4",
+      "equipment": "GHD Machine",
+      "difficulty": "Advanced",
+      "sets": 3,
+      "reps": "6-10",
+      "restSeconds": 90,
+      "instructions": [
+        "Position yourself in the GHD machine with ankles secured.",
+        "Lower your torso forward with control, resisting with your hamstrings.",
+        "Curl back up to the starting position using your hamstrings and glutes."
+      ],
+      "tips": "A challenging move \u2014 build up gradually."
+    },
+    {
+      "id": "hamstrings-single-leg-rdl",
+      "muscleId": "hamstrings",
+      "name": "Single-Leg Romanian Deadlift",
+      "gifUrl": "assets/gifs/hamstrings-single-leg-rdl.gif",
+      "imageUrl": "assets/images/hamstrings-single-leg-rdl.jpg",
+      "videoUrl": "assets/videos/hamstrings-single-leg-rdl.mp4",
+      "equipment": "Dumbbell",
+      "difficulty": "Intermediate",
+      "sets": 3,
+      "reps": "8-10 per leg",
+      "restSeconds": 60,
+      "instructions": [
+        "Stand on one leg holding a dumbbell in the opposite hand.",
+        "Hinge forward at the hips, extending the free leg back for balance.",
+        "Return to standing by driving your hips forward."
+      ],
+      "tips": "Focus on balance and a slow, controlled tempo."
+    },
+    {
+      "id": "glutes-hip-thrust",
+      "muscleId": "glutes",
+      "name": "Hip Thrust",
+      "gifUrl": "assets/gifs/glutes-hip-thrust.gif",
+      "imageUrl": "assets/images/glutes-hip-thrust.jpg",
+      "videoUrl": "assets/videos/glutes-hip-thrust.mp4",
+      "equipment": "Barbell, Bench",
+      "difficulty": "Intermediate",
+      "sets": 4,
+      "reps": "10-12",
+      "restSeconds": 75,
+      "instructions": [
+        "Sit with your upper back against a bench, barbell over your hips.",
+        "Drive your hips upward until your torso is parallel to the floor.",
+        "Lower back down with control."
+      ],
+      "tips": "Squeeze your glutes hard at the top of the movement."
+    },
+    {
+      "id": "glutes-glute-bridge",
+      "muscleId": "glutes",
+      "name": "Glute Bridge",
+      "gifUrl": "assets/gifs/glutes-glute-bridge.gif",
+      "imageUrl": "assets/images/glutes-glute-bridge.jpg",
+      "videoUrl": "assets/videos/glutes-glute-bridge.mp4",
+      "equipment": "Bodyweight",
+      "difficulty": "Beginner",
+      "sets": 3,
+      "reps": "15-20",
+      "restSeconds": 45,
+      "instructions": [
+        "Lie on your back with knees bent and feet flat on the floor.",
+        "Drive your hips up by squeezing your glutes until your body forms a straight line.",
+        "Lower back down with control."
+      ],
+      "tips": "Avoid overarching your lower back at the top."
+    },
+    {
+      "id": "glutes-bulgarian-split-squat-2",
+      "muscleId": "glutes",
+      "name": "Bulgarian Split Squat (Glute Focus)",
+      "gifUrl": "assets/gifs/glutes-bulgarian-split-squat-2.gif",
+      "imageUrl": "assets/images/glutes-bulgarian-split-squat-2.jpg",
+      "videoUrl": "assets/videos/glutes-bulgarian-split-squat-2.mp4",
+      "equipment": "Dumbbells, Bench",
+      "difficulty": "Intermediate",
+      "sets": 3,
+      "reps": "8-10 per leg",
+      "restSeconds": 75,
+      "instructions": [
+        "Rest your rear foot on a bench, front foot planted forward.",
+        "Lower into a lunge, pushing your hips back to emphasize the glutes.",
+        "Drive through your front heel to return to standing."
+      ],
+      "tips": "Leaning slightly forward shifts more load to the glutes."
+    },
+    {
+      "id": "glutes-cable-kickback",
+      "muscleId": "glutes",
+      "name": "Cable Kickback",
+      "gifUrl": "assets/gifs/glutes-cable-kickback.gif",
+      "imageUrl": "assets/images/glutes-cable-kickback.jpg",
+      "videoUrl": "assets/videos/glutes-cable-kickback.mp4",
+      "equipment": "Cable Machine",
+      "difficulty": "Beginner",
+      "sets": 3,
+      "reps": "12-15 per leg",
+      "restSeconds": 45,
+      "instructions": [
+        "Attach an ankle cuff to a low cable and stand facing the machine.",
+        "Kick your leg back and up, squeezing your glute at the top.",
+        "Return to the starting position with control."
+      ],
+      "tips": "Keep your torso stable and avoid swinging."
+    },
+    {
+      "id": "glutes-sumo-squat",
+      "muscleId": "glutes",
+      "name": "Sumo Squat",
+      "gifUrl": "assets/gifs/glutes-sumo-squat.gif",
+      "imageUrl": "assets/images/glutes-sumo-squat.jpg",
+      "videoUrl": "assets/videos/glutes-sumo-squat.mp4",
+      "equipment": "Dumbbell or Kettlebell",
+      "difficulty": "Beginner",
+      "sets": 3,
+      "reps": "12-15",
+      "restSeconds": 60,
+      "instructions": [
+        "Stand with feet wider than shoulder-width, toes pointed out, holding a weight.",
+        "Lower into a squat, keeping your chest up and knees tracking over your toes.",
+        "Drive through your heels to return to standing."
+      ],
+      "tips": "The wide stance emphasizes the glutes and inner thighs."
+    },
+    {
+      "id": "calves-standing-raise",
+      "muscleId": "calves",
+      "name": "Standing Calf Raise",
+      "gifUrl": "assets/gifs/calves-standing-raise.gif",
+      "imageUrl": "assets/images/calves-standing-raise.jpg",
+      "videoUrl": "assets/videos/calves-standing-raise.mp4",
+      "equipment": "Calf Raise Machine or Dumbbells",
+      "difficulty": "Beginner",
+      "sets": 4,
+      "reps": "15-20",
+      "restSeconds": 30,
+      "instructions": [
+        "Stand with the balls of your feet on a raised platform, heels hanging off.",
+        "Raise your heels as high as possible by contracting your calves.",
+        "Lower your heels back down below the platform level with control."
+      ],
+      "tips": "Pause briefly at the top for a stronger contraction."
+    },
+    {
+      "id": "calves-seated-raise",
+      "muscleId": "calves",
+      "name": "Seated Calf Raise",
+      "gifUrl": "assets/gifs/calves-seated-raise.gif",
+      "imageUrl": "assets/images/calves-seated-raise.jpg",
+      "videoUrl": "assets/videos/calves-seated-raise.mp4",
+      "equipment": "Seated Calf Raise Machine",
+      "difficulty": "Beginner",
+      "sets": 4,
+      "reps": "15-20",
+      "restSeconds": 30,
+      "instructions": [
+        "Sit at the machine with the pad resting on your thighs and balls of feet on the platform.",
+        "Raise your heels as high as possible.",
+        "Lower back down with control below platform level."
+      ],
+      "tips": "Targets the soleus muscle more than standing raises."
+    },
+    {
+      "id": "calves-jump-rope-raise",
+      "muscleId": "calves",
+      "name": "Jump Rope Calf Raises",
+      "gifUrl": "assets/gifs/calves-jump-rope-raise.gif",
+      "imageUrl": "assets/images/calves-jump-rope-raise.jpg",
+      "videoUrl": "assets/videos/calves-jump-rope-raise.mp4",
+      "equipment": "Jump Rope",
+      "difficulty": "Beginner",
+      "sets": 3,
+      "reps": "30-45s",
+      "restSeconds": 30,
+      "instructions": [
+        "Hold a jump rope or simply mimic the motion, staying on the balls of your feet.",
+        "Perform quick, small hops using your calves to drive the movement.",
+        "Keep a steady rhythm for the set duration."
+      ],
+      "tips": "Land softly to protect your ankles and knees."
+    },
+    {
+      "id": "calves-donkey-raise",
+      "muscleId": "calves",
+      "name": "Donkey Calf Raise",
+      "gifUrl": "assets/gifs/calves-donkey-raise.gif",
+      "imageUrl": "assets/images/calves-donkey-raise.jpg",
+      "videoUrl": "assets/videos/calves-donkey-raise.mp4",
+      "equipment": "Donkey Calf Machine or Partner",
+      "difficulty": "Intermediate",
+      "sets": 3,
+      "reps": "15-20",
+      "restSeconds": 30,
+      "instructions": [
+        "Bend forward at the hips with the balls of your feet on a raised platform.",
+        "Raise your heels as high as possible by contracting your calves.",
+        "Lower back down with control."
+      ],
+      "tips": "The bent-over position increases the stretch on the calves."
+    },
+    {
+      "id": "calves-single-leg-raise",
+      "muscleId": "calves",
+      "name": "Single-Leg Calf Raise",
+      "gifUrl": "assets/gifs/calves-single-leg-raise.gif",
+      "imageUrl": "assets/images/calves-single-leg-raise.jpg",
+      "videoUrl": "assets/videos/calves-single-leg-raise.mp4",
+      "equipment": "Bodyweight or Dumbbell",
+      "difficulty": "Intermediate",
+      "sets": 3,
+      "reps": "12-15 per leg",
+      "restSeconds": 30,
+      "instructions": [
+        "Stand on one leg with the ball of your foot on a raised platform.",
+        "Raise your heel as high as possible.",
+        "Lower back down with control below platform level."
+      ],
+      "tips": "Hold onto something for balance if needed."
+    },
+    {
+      "id": "abs-crunch",
+      "muscleId": "abs",
+      "name": "Crunch",
+      "gifUrl": "assets/gifs/abs-crunch.gif",
+      "imageUrl": "assets/images/abs-crunch.jpg",
+      "videoUrl": "assets/videos/abs-crunch.mp4",
+      "equipment": "Bodyweight",
+      "difficulty": "Beginner",
+      "sets": 3,
+      "reps": "15-20",
+      "restSeconds": 30,
+      "instructions": [
+        "Lie on your back with knees bent and hands behind your head.",
+        "Curl your shoulders up off the floor, contracting your abs.",
+        "Lower back down with control."
+      ],
+      "tips": "Avoid pulling on your neck with your hands."
+    },
+    {
+      "id": "abs-plank",
+      "muscleId": "abs",
+      "name": "Plank",
+      "gifUrl": "assets/gifs/abs-plank.gif",
+      "imageUrl": "assets/images/abs-plank.jpg",
+      "videoUrl": "assets/videos/abs-plank.mp4",
+      "equipment": "Bodyweight",
+      "difficulty": "Beginner",
+      "sets": 3,
+      "reps": "30-60s",
+      "restSeconds": 30,
+      "instructions": [
+        "Position yourself on your forearms and toes, body in a straight line.",
+        "Engage your core and hold the position without letting your hips sag.",
+        "Breathe steadily throughout the hold."
+      ],
+      "tips": "Squeeze your glutes to help keep your hips level."
+    },
+    {
+      "id": "abs-leg-raise",
+      "muscleId": "abs",
+      "name": "Lying Leg Raise",
+      "gifUrl": "assets/gifs/abs-leg-raise.gif",
+      "imageUrl": "assets/images/abs-leg-raise.jpg",
+      "videoUrl": "assets/videos/abs-leg-raise.mp4",
+      "equipment": "Bodyweight",
+      "difficulty": "Intermediate",
+      "sets": 3,
+      "reps": "12-15",
+      "restSeconds": 45,
+      "instructions": [
+        "Lie on your back with legs straight and hands at your sides.",
+        "Raise your legs up until they are vertical, keeping them straight.",
+        "Lower back down with control without touching the floor."
+      ],
+      "tips": "Keep your lower back pressed into the floor."
+    },
+    {
+      "id": "abs-russian-twist",
+      "muscleId": "abs",
+      "name": "Russian Twist",
+      "gifUrl": "assets/gifs/abs-russian-twist.gif",
+      "imageUrl": "assets/images/abs-russian-twist.jpg",
+      "videoUrl": "assets/videos/abs-russian-twist.mp4",
+      "equipment": "Bodyweight or Weight Plate",
+      "difficulty": "Intermediate",
+      "sets": 3,
+      "reps": "20-30 total",
+      "restSeconds": 30,
+      "instructions": [
+        "Sit on the floor with knees bent, leaning back slightly, holding a weight.",
+        "Rotate your torso to tap the weight on the floor beside your hip.",
+        "Rotate to the other side and continue alternating."
+      ],
+      "tips": "Lift your feet off the floor for an added challenge."
+    },
+    {
+      "id": "abs-bicycle-crunch",
+      "muscleId": "abs",
+      "name": "Bicycle Crunch",
+      "gifUrl": "assets/gifs/abs-bicycle-crunch.gif",
+      "imageUrl": "assets/images/abs-bicycle-crunch.jpg",
+      "videoUrl": "assets/videos/abs-bicycle-crunch.mp4",
+      "equipment": "Bodyweight",
+      "difficulty": "Beginner",
+      "sets": 3,
+      "reps": "20-30 total",
+      "restSeconds": 30,
+      "instructions": [
+        "Lie on your back with hands behind your head and knees bent.",
+        "Bring one elbow toward the opposite knee while extending the other leg out.",
+        "Alternate sides in a pedaling motion."
+      ],
+      "tips": "Move slowly and focus on the twist, not speed."
+    },
+    {
+      "id": "obliques-side-plank",
+      "muscleId": "obliques",
+      "name": "Side Plank",
+      "gifUrl": "assets/gifs/obliques-side-plank.gif",
+      "imageUrl": "assets/images/obliques-side-plank.jpg",
+      "videoUrl": "assets/videos/obliques-side-plank.mp4",
+      "equipment": "Bodyweight",
+      "difficulty": "Beginner",
+      "sets": 3,
+      "reps": "20-40s per side",
+      "restSeconds": 30,
+      "instructions": [
+        "Lie on your side, propped up on one forearm, feet stacked.",
+        "Lift your hips off the floor until your body forms a straight line.",
+        "Hold the position, then switch sides."
+      ],
+      "tips": "Keep your hips high and avoid sagging."
+    },
+    {
+      "id": "obliques-russian-twist-2",
+      "muscleId": "obliques",
+      "name": "Russian Twist",
+      "gifUrl": "assets/gifs/obliques-russian-twist-2.gif",
+      "imageUrl": "assets/images/obliques-russian-twist-2.jpg",
+      "videoUrl": "assets/videos/obliques-russian-twist-2.mp4",
+      "equipment": "Bodyweight or Weight Plate",
+      "difficulty": "Intermediate",
+      "sets": 3,
+      "reps": "20-30 total",
+      "restSeconds": 30,
+      "instructions": [
+        "Sit with knees bent, leaning back slightly, holding a weight in both hands.",
+        "Rotate your torso side to side, tapping the weight near your hip each time.",
+        "Keep your core engaged throughout."
+      ],
+      "tips": "Slow the movement down to increase difficulty."
+    },
+    {
+      "id": "obliques-woodchopper",
+      "muscleId": "obliques",
+      "name": "Cable Woodchopper",
+      "gifUrl": "assets/gifs/obliques-woodchopper.gif",
+      "imageUrl": "assets/images/obliques-woodchopper.jpg",
+      "videoUrl": "assets/videos/obliques-woodchopper.mp4",
+      "equipment": "Cable Machine",
+      "difficulty": "Intermediate",
+      "sets": 3,
+      "reps": "12-15 per side",
+      "restSeconds": 45,
+      "instructions": [
+        "Stand sideways to a cable machine set at a high position, holding the handle with both hands.",
+        "Pull the handle diagonally down across your body toward your opposite hip.",
+        "Return to the starting position with control and repeat, then switch sides."
+      ],
+      "tips": "Rotate through your torso, not just your arms."
+    },
+    {
+      "id": "obliques-side-bend",
+      "muscleId": "obliques",
+      "name": "Standing Side Bend",
+      "gifUrl": "assets/gifs/obliques-side-bend.gif",
+      "imageUrl": "assets/images/obliques-side-bend.jpg",
+      "videoUrl": "assets/videos/obliques-side-bend.mp4",
+      "equipment": "Dumbbell",
+      "difficulty": "Beginner",
+      "sets": 3,
+      "reps": "12-15 per side",
+      "restSeconds": 30,
+      "instructions": [
+        "Stand holding a dumbbell in one hand at your side.",
+        "Bend sideways at the waist, lowering the dumbbell toward your knee.",
+        "Return to standing and repeat, then switch sides."
+      ],
+      "tips": "Keep the movement controlled, avoid leaning forward or back."
+    },
+    {
+      "id": "obliques-bicycle-crunch-2",
+      "muscleId": "obliques",
+      "name": "Bicycle Crunch",
+      "gifUrl": "assets/gifs/obliques-bicycle-crunch-2.gif",
+      "imageUrl": "assets/images/obliques-bicycle-crunch-2.jpg",
+      "videoUrl": "assets/videos/obliques-bicycle-crunch-2.mp4",
+      "equipment": "Bodyweight",
+      "difficulty": "Beginner",
+      "sets": 3,
+      "reps": "20-30 total",
+      "restSeconds": 30,
+      "instructions": [
+        "Lie on your back with hands behind your head and knees bent.",
+        "Bring one elbow toward the opposite knee while extending the other leg.",
+        "Alternate sides continuously in a pedaling motion."
+      ],
+      "tips": "Focus on rotating through the ribcage for full oblique engagement."
+    }
+  ],
+  "cardioWorkouts": [
+    {
+      "id": "running-steady-state",
+      "cardioTypeId": "running",
+      "name": "Steady-State Run",
+      "gifUrl": "assets/gifs/running-steady-state.gif",
+      "imageUrl": "assets/images/running-steady-state.jpg",
+      "videoUrl": "assets/videos/running-steady-state.mp4",
+      "equipment": "None",
+      "difficulty": "Beginner",
+      "durationMinutes": 30,
+      "caloriesBurnedEstimate": 250,
+      "intensity": "Moderate",
+      "instructions": [
+        "Warm up with 5 minutes of brisk walking.",
+        "Run at a conversational, steady pace for the target duration.",
+        "Cool down with 5 minutes of walking."
+      ],
+      "tips": ""
+    },
+    {
+      "id": "running-interval",
+      "cardioTypeId": "running",
+      "name": "Interval Sprints",
+      "gifUrl": "assets/gifs/running-interval.gif",
+      "imageUrl": "assets/images/running-interval.jpg",
+      "videoUrl": "assets/videos/running-interval.mp4",
+      "equipment": "None",
+      "difficulty": "Intermediate",
+      "durationMinutes": 20,
+      "caloriesBurnedEstimate": 300,
+      "intensity": "High",
+      "instructions": [
+        "Warm up with light jogging for 5 minutes.",
+        "Sprint at maximum effort for 30 seconds, then walk or jog for 60 seconds.",
+        "Repeat the cycle for the target duration, then cool down."
+      ],
+      "tips": ""
+    },
+    {
+      "id": "running-hill",
+      "cardioTypeId": "running",
+      "name": "Hill Repeats",
+      "gifUrl": "assets/gifs/running-hill.gif",
+      "imageUrl": "assets/images/running-hill.jpg",
+      "videoUrl": "assets/videos/running-hill.mp4",
+      "equipment": "None",
+      "difficulty": "Advanced",
+      "durationMinutes": 25,
+      "caloriesBurnedEstimate": 320,
+      "intensity": "High",
+      "instructions": [
+        "Warm up, then find a moderate incline hill.",
+        "Run up the hill at a hard effort, then walk back down to recover.",
+        "Repeat for the target duration."
+      ],
+      "tips": ""
+    },
+    {
+      "id": "running-long-slow",
+      "cardioTypeId": "running",
+      "name": "Long Slow Run",
+      "gifUrl": "assets/gifs/running-long-slow.gif",
+      "imageUrl": "assets/images/running-long-slow.jpg",
+      "videoUrl": "assets/videos/running-long-slow.mp4",
+      "equipment": "None",
+      "difficulty": "Intermediate",
+      "durationMinutes": 45,
+      "caloriesBurnedEstimate": 400,
+      "intensity": "Low-Moderate",
+      "instructions": [
+        "Warm up with a few minutes of walking.",
+        "Run at an easy, sustainable pace for the entire duration.",
+        "Cool down and stretch afterward."
+      ],
+      "tips": ""
+    },
+    {
+      "id": "cycling-steady",
+      "cardioTypeId": "cycling",
+      "name": "Steady-State Ride",
+      "gifUrl": "assets/gifs/cycling-steady.gif",
+      "imageUrl": "assets/images/cycling-steady.jpg",
+      "videoUrl": "assets/videos/cycling-steady.mp4",
+      "equipment": "Bicycle or Stationary Bike",
+      "difficulty": "Beginner",
+      "durationMinutes": 30,
+      "caloriesBurnedEstimate": 260,
+      "intensity": "Moderate",
+      "instructions": [
+        "Warm up with 5 minutes of easy pedaling.",
+        "Maintain a steady, moderate pace for the target duration.",
+        "Cool down with easy pedaling for 5 minutes."
+      ],
+      "tips": ""
+    },
+    {
+      "id": "cycling-hiit",
+      "cardioTypeId": "cycling",
+      "name": "Cycling HIIT Intervals",
+      "gifUrl": "assets/gifs/cycling-hiit.gif",
+      "imageUrl": "assets/images/cycling-hiit.jpg",
+      "videoUrl": "assets/videos/cycling-hiit.mp4",
+      "equipment": "Stationary Bike",
+      "difficulty": "Intermediate",
+      "durationMinutes": 20,
+      "caloriesBurnedEstimate": 300,
+      "intensity": "High",
+      "instructions": [
+        "Warm up with 5 minutes of light pedaling.",
+        "Pedal at maximum resistance/effort for 30 seconds, then recover for 90 seconds.",
+        "Repeat for the target duration, then cool down."
+      ],
+      "tips": ""
+    },
+    {
+      "id": "cycling-hill-climb",
+      "cardioTypeId": "cycling",
+      "name": "Hill Climb Ride",
+      "gifUrl": "assets/gifs/cycling-hill-climb.gif",
+      "imageUrl": "assets/images/cycling-hill-climb.jpg",
+      "videoUrl": "assets/videos/cycling-hill-climb.mp4",
+      "equipment": "Bicycle or Stationary Bike",
+      "difficulty": "Advanced",
+      "durationMinutes": 30,
+      "caloriesBurnedEstimate": 350,
+      "intensity": "High",
+      "instructions": [
+        "Warm up, then increase resistance to simulate a climb.",
+        "Maintain a strong steady effort while climbing for several minutes.",
+        "Recover on flat resistance, then repeat."
+      ],
+      "tips": ""
+    },
+    {
+      "id": "cycling-endurance",
+      "cardioTypeId": "cycling",
+      "name": "Endurance Ride",
+      "gifUrl": "assets/gifs/cycling-endurance.gif",
+      "imageUrl": "assets/images/cycling-endurance.jpg",
+      "videoUrl": "assets/videos/cycling-endurance.mp4",
+      "equipment": "Bicycle or Stationary Bike",
+      "difficulty": "Intermediate",
+      "durationMinutes": 60,
+      "caloriesBurnedEstimate": 500,
+      "intensity": "Moderate",
+      "instructions": [
+        "Warm up with easy pedaling.",
+        "Ride at a comfortable, sustainable pace for the full duration.",
+        "Cool down and stretch your legs afterward."
+      ],
+      "tips": ""
+    },
+    {
+      "id": "jumprope-basic",
+      "cardioTypeId": "jump-rope",
+      "name": "Basic Jump Rope",
+      "gifUrl": "assets/gifs/jumprope-basic.gif",
+      "imageUrl": "assets/images/jumprope-basic.jpg",
+      "videoUrl": "assets/videos/jumprope-basic.mp4",
+      "equipment": "Jump Rope",
+      "difficulty": "Beginner",
+      "durationMinutes": 10,
+      "caloriesBurnedEstimate": 100,
+      "intensity": "Moderate",
+      "instructions": [
+        "Hold the rope handles and swing it overhead using your wrists.",
+        "Jump just high enough to clear the rope as it passes underfoot.",
+        "Maintain a steady rhythm for the target duration."
+      ],
+      "tips": ""
+    },
+    {
+      "id": "jumprope-intervals",
+      "cardioTypeId": "jump-rope",
+      "name": "Jump Rope Intervals",
+      "gifUrl": "assets/gifs/jumprope-intervals.gif",
+      "imageUrl": "assets/images/jumprope-intervals.jpg",
+      "videoUrl": "assets/videos/jumprope-intervals.mp4",
+      "equipment": "Jump Rope",
+      "difficulty": "Intermediate",
+      "durationMinutes": 15,
+      "caloriesBurnedEstimate": 180,
+      "intensity": "High",
+      "instructions": [
+        "Jump rope at a fast pace for 30 seconds.",
+        "Rest for 30 seconds.",
+        "Repeat the cycle for the target duration."
+      ],
+      "tips": ""
+    },
+    {
+      "id": "jumprope-double-under",
+      "cardioTypeId": "jump-rope",
+      "name": "Double Unders",
+      "gifUrl": "assets/gifs/jumprope-double-under.gif",
+      "imageUrl": "assets/images/jumprope-double-under.jpg",
+      "videoUrl": "assets/videos/jumprope-double-under.mp4",
+      "equipment": "Jump Rope",
+      "difficulty": "Advanced",
+      "durationMinutes": 10,
+      "caloriesBurnedEstimate": 150,
+      "intensity": "High",
+      "instructions": [
+        "Swing the rope faster than a normal jump, passing it under your feet twice per jump.",
+        "Jump slightly higher than a basic jump to allow the extra pass.",
+        "Practice in short sets, resting as needed."
+      ],
+      "tips": ""
+    },
+    {
+      "id": "jumprope-freestyle",
+      "cardioTypeId": "jump-rope",
+      "name": "Freestyle Jump Rope",
+      "gifUrl": "assets/gifs/jumprope-freestyle.gif",
+      "imageUrl": "assets/images/jumprope-freestyle.jpg",
+      "videoUrl": "assets/videos/jumprope-freestyle.mp4",
+      "equipment": "Jump Rope",
+      "difficulty": "Intermediate",
+      "durationMinutes": 15,
+      "caloriesBurnedEstimate": 160,
+      "intensity": "Moderate-High",
+      "instructions": [
+        "Mix basic jumps with alternate-foot steps and high knees.",
+        "Keep a continuous rhythm, switching patterns every 30-60 seconds.",
+        "Rest briefly between pattern changes as needed."
+      ],
+      "tips": ""
+    },
+    {
+      "id": "hiit-bodyweight-circuit",
+      "cardioTypeId": "hiit",
+      "name": "Bodyweight HIIT Circuit",
+      "gifUrl": "assets/gifs/hiit-bodyweight-circuit.gif",
+      "imageUrl": "assets/images/hiit-bodyweight-circuit.jpg",
+      "videoUrl": "assets/videos/hiit-bodyweight-circuit.mp4",
+      "equipment": "None",
+      "difficulty": "Intermediate",
+      "durationMinutes": 20,
+      "caloriesBurnedEstimate": 280,
+      "intensity": "High",
+      "instructions": [
+        "Warm up for 5 minutes with light movement.",
+        "Perform burpees, jump squats, mountain climbers, and high knees for 40 seconds each, resting 20 seconds between.",
+        "Complete 3-4 rounds of the circuit, then cool down."
+      ],
+      "tips": ""
+    },
+    {
+      "id": "hiit-tabata",
+      "cardioTypeId": "hiit",
+      "name": "Tabata Intervals",
+      "gifUrl": "assets/gifs/hiit-tabata.gif",
+      "imageUrl": "assets/images/hiit-tabata.jpg",
+      "videoUrl": "assets/videos/hiit-tabata.mp4",
+      "equipment": "None",
+      "difficulty": "Advanced",
+      "durationMinutes": 15,
+      "caloriesBurnedEstimate": 250,
+      "intensity": "Very High",
+      "instructions": [
+        "Choose one or two exercises like squats or burpees.",
+        "Work at maximum effort for 20 seconds, then rest for 10 seconds.",
+        "Repeat for 8 rounds (4 minutes), then rest and repeat with a new exercise."
+      ],
+      "tips": ""
+    },
+    {
+      "id": "hiit-kettlebell",
+      "cardioTypeId": "hiit",
+      "name": "Kettlebell HIIT",
+      "gifUrl": "assets/gifs/hiit-kettlebell.gif",
+      "imageUrl": "assets/images/hiit-kettlebell.jpg",
+      "videoUrl": "assets/videos/hiit-kettlebell.mp4",
+      "equipment": "Kettlebell",
+      "difficulty": "Intermediate",
+      "durationMinutes": 20,
+      "caloriesBurnedEstimate": 300,
+      "intensity": "High",
+      "instructions": [
+        "Warm up with light movement.",
+        "Perform kettlebell swings, goblet squats, and snatches for 40 seconds each, resting 20 seconds between.",
+        "Complete 3-4 rounds, then cool down."
+      ],
+      "tips": ""
+    },
+    {
+      "id": "hiit-sprint-intervals",
+      "cardioTypeId": "hiit",
+      "name": "Sprint Interval Training",
+      "gifUrl": "assets/gifs/hiit-sprint-intervals.gif",
+      "imageUrl": "assets/images/hiit-sprint-intervals.jpg",
+      "videoUrl": "assets/videos/hiit-sprint-intervals.mp4",
+      "equipment": "None",
+      "difficulty": "Advanced",
+      "durationMinutes": 15,
+      "caloriesBurnedEstimate": 270,
+      "intensity": "Very High",
+      "instructions": [
+        "Warm up with light jogging.",
+        "Sprint at full effort for 15-20 seconds, then walk to recover for 40 seconds.",
+        "Repeat for the target duration, then cool down."
+      ],
+      "tips": ""
+    },
+    {
+      "id": "swimming-freestyle",
+      "cardioTypeId": "swimming",
+      "name": "Freestyle Laps",
+      "gifUrl": "assets/gifs/swimming-freestyle.gif",
+      "imageUrl": "assets/images/swimming-freestyle.jpg",
+      "videoUrl": "assets/videos/swimming-freestyle.mp4",
+      "equipment": "Pool",
+      "difficulty": "Intermediate",
+      "durationMinutes": 30,
+      "caloriesBurnedEstimate": 300,
+      "intensity": "Moderate",
+      "instructions": [
+        "Warm up with a few easy laps.",
+        "Swim continuous freestyle laps at a steady, sustainable pace.",
+        "Cool down with slow, relaxed laps."
+      ],
+      "tips": ""
+    },
+    {
+      "id": "swimming-interval",
+      "cardioTypeId": "swimming",
+      "name": "Swim Interval Training",
+      "gifUrl": "assets/gifs/swimming-interval.gif",
+      "imageUrl": "assets/images/swimming-interval.jpg",
+      "videoUrl": "assets/videos/swimming-interval.mp4",
+      "equipment": "Pool",
+      "difficulty": "Advanced",
+      "durationMinutes": 25,
+      "caloriesBurnedEstimate": 320,
+      "intensity": "High",
+      "instructions": [
+        "Warm up with easy laps.",
+        "Swim one lap at high effort, then rest for 20-30 seconds.",
+        "Repeat for the target duration, then cool down."
+      ],
+      "tips": ""
+    },
+    {
+      "id": "swimming-mixed-stroke",
+      "cardioTypeId": "swimming",
+      "name": "Mixed Stroke Swim",
+      "gifUrl": "assets/gifs/swimming-mixed-stroke.gif",
+      "imageUrl": "assets/images/swimming-mixed-stroke.jpg",
+      "videoUrl": "assets/videos/swimming-mixed-stroke.mp4",
+      "equipment": "Pool",
+      "difficulty": "Intermediate",
+      "durationMinutes": 30,
+      "caloriesBurnedEstimate": 290,
+      "intensity": "Moderate",
+      "instructions": [
+        "Warm up with freestyle laps.",
+        "Alternate between freestyle, backstroke, and breaststroke every few laps.",
+        "Cool down with easy paced swimming."
+      ],
+      "tips": ""
+    },
+    {
+      "id": "swimming-endurance",
+      "cardioTypeId": "swimming",
+      "name": "Endurance Swim",
+      "gifUrl": "assets/gifs/swimming-endurance.gif",
+      "imageUrl": "assets/images/swimming-endurance.jpg",
+      "videoUrl": "assets/videos/swimming-endurance.mp4",
+      "equipment": "Pool",
+      "difficulty": "Advanced",
+      "durationMinutes": 45,
+      "caloriesBurnedEstimate": 450,
+      "intensity": "Moderate-High",
+      "instructions": [
+        "Warm up with a few easy laps.",
+        "Swim continuously at a moderate, sustainable pace for the full duration.",
+        "Cool down with slow laps and stretch after exiting the pool."
+      ],
+      "tips": ""
+    },
+    {
+      "id": "rowing-steady",
+      "cardioTypeId": "rowing",
+      "name": "Steady-State Row",
+      "gifUrl": "assets/gifs/rowing-steady.gif",
+      "imageUrl": "assets/images/rowing-steady.jpg",
+      "videoUrl": "assets/videos/rowing-steady.mp4",
+      "equipment": "Rowing Machine",
+      "difficulty": "Beginner",
+      "durationMinutes": 20,
+      "caloriesBurnedEstimate": 220,
+      "intensity": "Moderate",
+      "instructions": [
+        "Sit on the rower with feet strapped in, knees bent, arms extended.",
+        "Drive through your legs, then lean back and pull the handle to your chest.",
+        "Reverse the motion smoothly and repeat at a steady pace for the duration."
+      ],
+      "tips": ""
+    },
+    {
+      "id": "rowing-interval",
+      "cardioTypeId": "rowing",
+      "name": "Rowing Intervals",
+      "gifUrl": "assets/gifs/rowing-interval.gif",
+      "imageUrl": "assets/images/rowing-interval.jpg",
+      "videoUrl": "assets/videos/rowing-interval.mp4",
+      "equipment": "Rowing Machine",
+      "difficulty": "Intermediate",
+      "durationMinutes": 20,
+      "caloriesBurnedEstimate": 280,
+      "intensity": "High",
+      "instructions": [
+        "Warm up with 5 minutes of easy rowing.",
+        "Row at high intensity for 500m, then rest for 90 seconds.",
+        "Repeat for the target number of rounds, then cool down."
+      ],
+      "tips": ""
+    },
+    {
+      "id": "rowing-endurance",
+      "cardioTypeId": "rowing",
+      "name": "Endurance Row",
+      "gifUrl": "assets/gifs/rowing-endurance.gif",
+      "imageUrl": "assets/images/rowing-endurance.jpg",
+      "videoUrl": "assets/videos/rowing-endurance.mp4",
+      "equipment": "Rowing Machine",
+      "difficulty": "Advanced",
+      "durationMinutes": 40,
+      "caloriesBurnedEstimate": 400,
+      "intensity": "Moderate",
+      "instructions": [
+        "Warm up with light rowing.",
+        "Maintain a steady, sustainable pace for the full duration.",
+        "Cool down with slow rowing and stretch afterward."
+      ],
+      "tips": ""
+    },
+    {
+      "id": "rowing-power-strokes",
+      "cardioTypeId": "rowing",
+      "name": "Power Stroke Intervals",
+      "gifUrl": "assets/gifs/rowing-power-strokes.gif",
+      "imageUrl": "assets/images/rowing-power-strokes.jpg",
+      "videoUrl": "assets/videos/rowing-power-strokes.mp4",
+      "equipment": "Rowing Machine",
+      "difficulty": "Advanced",
+      "durationMinutes": 15,
+      "caloriesBurnedEstimate": 240,
+      "intensity": "High",
+      "instructions": [
+        "Warm up with easy rowing.",
+        "Row 10 powerful, explosive strokes, then row easy for 30 seconds.",
+        "Repeat the cycle for the target duration."
+      ],
+      "tips": ""
+    }
+  ]
+}
